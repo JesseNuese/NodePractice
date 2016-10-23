@@ -1,0 +1,15 @@
+{
+  "name": "gandalf",
+  "version": "1.2.3",
+  "description": "",
+  "main": "index.js",
+  "repository": "https://github.com/JesseNuese/NodePractice",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "gandalf",
+  "license": "ISC",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
