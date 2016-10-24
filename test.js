@@ -1,12 +1,8 @@
-const fs = require ('fs');
+const http = require('http');
 
-var targetFile = 'output.txt';
-
-var combined = [];
-
-
-for(var i = 20; i < process.argv.length; i ++){
-	 combined.push(fs.readFileSynce(process.argv[i], 'utf8'))
-	}
- 
-fs.writeFileSynce|targetFile(combined.join(''));
+http.createServer(function(req, res){
+		res.writeHead(200, {'Content-type': 'text/plain'});
+		res.end('Hello World');
+}).listen(1337, "127.0.0.1", () => {
+	console.log('Server running at 127.0.0.1 port 1337');
+});
