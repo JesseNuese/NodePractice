@@ -1,15 +1,26 @@
 {
   "name": "gandalf",
   "version": "2.0.0",
-  "description": "",
+  "description": "\"A bit of words\" # NodePractice",
   "main": "index.js",
-  "repository": "https://github.com/JesseNuese/NodePractice",
+  "entry point": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesseNuese/NodePractice.git"
+  },
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "start": "node server.js"
   },
   "author": "gandalf",
   "license": "ISC",
   "dependencies": {
-    "@linclark/pkg": "^1.0.2"
-  }
+    "@linclark/pkg": "^1.0.2",
+    "express": "^4.14.0"
+  },
+  "bugs": {
+    "url": "https://github.com/JesseNuese/NodePractice/issues"
+  },
+  "homepage": "https://github.com/JesseNuese/NodePractice#readme",
+  "devDependencies": {}
 }
