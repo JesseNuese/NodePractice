@@ -6,7 +6,8 @@ var midware = (req,res,next) =>{
   next();
 };
 
-app.use(midware);
+var logger = require('morgan');
+app.use(logger('dev'));
 
 var rootHandler = (req, res) => {
   console.log("GET root");
