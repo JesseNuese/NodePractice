@@ -8,11 +8,19 @@ var midware = (req,res,next) =>{
 
 app.use(midware);
 
-app.get('/', (req, res) => {
+var rootHandler = (req, res) => {
   console.log("GET root");
   res.send("<h1>Out Here</h1>");
-})
+}
 
+function checkMyAPIKey = (req,res,next) => {
+    console.log("Checking key", req.query.key);
+    if (rep.query.key) {
+      console.log("You Passed");
+      next();
+    }
+    console.log("You are blocked!");
+}
 
 var PORT = process.env.PORT || 8080;
 
